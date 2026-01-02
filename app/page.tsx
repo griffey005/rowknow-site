@@ -22,7 +22,7 @@ export default function Home() {
 	   color: "#333",
 	   lineHeight: "1.5"
 	}}>
-	   RowKnow has three products in development for rowing teams. Each is a mentoring opportunity as well as a products we wish existed
+	   RowKnow has three products in development for rowing teams. Each is a mentoring opportunity as well as a product we wish existed
 	   in our own rowing and coaching experiences. Contact us if you would like to be notified of beta-testing
 	   opportunities.
 	</p>
