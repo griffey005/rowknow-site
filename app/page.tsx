@@ -40,6 +40,7 @@ export default function Home() {
 	          stage={project.stage}
                   image1={project.image1}
                   image2={project.image2}
+                  lastUpdated={project.lastUpdated}
                />
             ))}
          </div>

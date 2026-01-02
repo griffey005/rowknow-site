@@ -4,9 +4,10 @@ type ProjectCardProps = {
    stage: string;
    image1?: string;
    image2?: string;
+   lastUpdated?: string;
 };
 
-export default function ProjectCard( { name, description, stage, image1, image2 }: ProjectCardProps ) {
+export default function ProjectCard( { name, description, stage, image1, image2, lastUpdated }: ProjectCardProps ) {
    return (
       <div style={{
          border: "1px solid #ccc",
@@ -23,7 +24,12 @@ export default function ProjectCard( { name, description, stage, image1, image2 
 	   <div style={{ marginTop: "0.75rem" }}>
 	      <strong>Status:</strong> {stage}
 	   </div>
-            </div>
+		{lastUpdated && (
+		   <div style={{ marginTop: "0.5rem", fontSize: "0.85rem", color: "#666" }}>
+		      Last updated: {lastUpdated}
+		   </div>
+		)}
+	   </div>
 
             <div style={{
                flex: 2,
