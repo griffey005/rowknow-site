@@ -16,9 +16,11 @@ export default function ProjectCard( { name, description, stage, image1, image2 
             gap: "1rem"
          }}>
             <div style={{ flex: 3 }}>
-               <h2 style={{ marginTop: 0 }}>{name}</h2>
+               <h2 style={{ marginTop: 0 }}><strong>{name}</strong></h2>
                <p>{description}</p>
-               <strong>Stage:</strong> {stage}
+	   <div style={{ marginTop: "0.75rem" }}>
+	      <strong>Status:</strong> {stage}
+	   </div>
             </div>
 
             <div style={{
