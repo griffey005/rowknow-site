@@ -14,29 +14,6 @@ export default function Home() {
          margin: "0 auto"
 	}}>
 
-<header style={{
-   display: "flex",
-   alignItems: "center",
-   justifyContent: "space-between",
-   marginBottom: "2rem"
-}}>
-	<img
-	   src="/logo/RK_transparent_cropped.png"
-	   alt="RowKnow logo"
-	   style={{
-	      height: "120px",
-	      width: "auto",
-	      marginBottom: "1rem"
-	   }}
-	/>
-
-   <nav style={{ display: "flex", gap: "1.25rem", fontSize: "0.95rem" }}>
-      <a href="/" style={{ color: "#333", textDecoration: "none" }}>Projects</a>
-      <a href="/about" style={{ color: "#333", textDecoration: "none" }}>About</a>
-      <a href="/contact" style={{ color: "#333", textDecoration: "none" }}>Contact</a>
-   </nav>
-</header>
-
       {/*
 	<div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "2rem" }}>
 	   <img
