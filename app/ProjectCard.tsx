@@ -2,6 +2,8 @@ type ProjectCardProps = {
    name: string;
    description: string;
    stage: string;
+   image1?: string;
+   image2?: string;
 };
 
 export default function ProjectCard( { name, description, stage, image1, image2 }: ProjectCardProps ) {
