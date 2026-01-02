@@ -1,3 +1,4 @@
+import { projects } from "./projects";
 import ProjectCard from "./ProjectCard";
 
 export default function Home() {
@@ -10,23 +11,16 @@ export default function Home() {
                width: "100%",
                maxWidth: "900px", marginLeft: "auto", marginRight: "auto"
                }}>
-            <ProjectCard
-               name="ErgMinder"
-               description="Erg workout ID and data capture helper."
-               stage="Prototype"
-            />
-            
-            <ProjectCard
-               name="CoCoBox"
-               description="Coach-to-crew communication system."
-               stage="Field-tested prototype"
-            />
-            
-            <ProjectCard
-               name="SaltLight"
-               description="Saltwater-tolerant rowing shell light."
-               stage="Engineering prototypes"
-            />
+            {projects.map( ( project ) => (
+	       <ProjectCard
+	          key={project.name}
+	          name={project.name}
+	          description={project.description}
+	          stage={project.stage}
+                  image1={project.image1}
+                  image2={project.image2}
+               />
+            ))}
          </div>
       </main>
    );
